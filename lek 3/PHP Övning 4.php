@@ -71,10 +71,27 @@ $fodelsedatum = array(
     "Erik" => "05.06.1980"
 );
 
+$manader = array(
+    1 => "januari",
+    2 => "februari",
+    3 => "mars",
+    4 => "april",
+    5 => "maj",
+    6 => "juni",
+    7 => "juli",
+    8 => "augusti",
+    9 => "september",
+    10 => "oktober",
+    11 => "november",
+    12 => "december"
+);
+
 foreach ($fodelsedatum as $namn => $datum) {
     $delar = explode(".", $datum);
-    $manad = str_replace("0", "", $delar[1]);
-    echo "$namn är född i månad $manad<br>";
+    $manad = intval($delar[1]);
+    $manadsnamn = $manader[$manad];  
+
+    echo "$namn är född i $manadsnamn<br>";
 }
 
 $finlands_stader = array(
