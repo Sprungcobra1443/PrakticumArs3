@@ -1,0 +1,9 @@
+Male, Good, 08:06, 28-08-2024
+Male, Bad, 08:07, 28-08-2024
+Female, Very Bad, 08:07, 28-08-2024
+Male, Very Good, 08:07, 28-08-2024
+Other, Good, 08:38, 28-08-2024
+Other, Neutral, 08:51, 28-08-2024
+Male, Good, 08:52, 28-08-2024
+Female, Very Bad, 09:45, 28-08-2024
+Male, Neutral, 10:58, 29-08-2024
