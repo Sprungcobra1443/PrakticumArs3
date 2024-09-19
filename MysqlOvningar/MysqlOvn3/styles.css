@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: #e6e6e6; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: black;
+}
+
+/* Table container */
+.table-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #1a1a1a; /* Dark background for the container */
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px red; /* Neon glow effect */
+}
+
+/* Header styles */
+.table-header {
+    display: flex;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    color: #ff4d4d; /* Neon red for text */
+    text-shadow: 0 0 5px red; /* Neon text effect */
+}
+
+.table-header div {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid red;
+    text-align: left;
+}
+
+/* Row styles */
+.table-row {
+    display: flex;
+    padding: 10px;
+    background-color: #262626; /* Slightly lighter black for rows */
+    color: #e6e6e6;
+}
+
+.table-row div {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid red;
+    text-align: left;
+}
+
+/* Actions button styles */
+.actions a {
+    margin-right: 10px;
+}
+
+.actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    border: none;
+    box-shadow: 0 0 5px red; /* Neon button glow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.actions button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 0 10px red;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    /* Stack columns vertically on smaller screens */
+    .table-row, .table-header {
+        flex-direction: column;
+    }
+
+    .table-header div, .table-row div {
+        border: none;
+        padding: 6px;
+    }
+
+    .actions button {
+        padding: 5px;
+    }
+
+    .table-container {
+        border: none;
+    }
+}
